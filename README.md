@@ -17,6 +17,7 @@ Put the configuration to `.env.{environment}`
 
 ## Commands
 
+#### Migrate
 Create a migration file, this will create a `file` under `migrations` folder
 ```sh
 npx knex migrate:make create_user_table 
@@ -48,8 +49,19 @@ npx knex migrate:list
 Rollback
 ```sh
 # Rollback all migrations
-knex migrate:rollback --all
+mpx knex migrate:rollback --all
 
 # Rollback the last batch of migration
-knex migrate:rollback
+npx knex migrate:rollback
+```
+
+#### Seed
+Create a seed file, use for initialize data
+```sh
+npx knex seed:make {file_name}
+```
+
+Run seed file
+```sh
+npx knex seed:run
 ```

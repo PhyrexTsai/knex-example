@@ -8,6 +8,9 @@ module.exports = {
       database: process.env.MYSQL_DATABASE,
       user: process.env.MYSQL_USER,
       password: process.env.MYSQL_PASSWORD,
+    },
+    seeds: {
+      directory: './seeds/test'
     }
   },
 
@@ -18,6 +21,9 @@ module.exports = {
       database: process.env.MYSQL_DATABASE,
       user: process.env.MYSQL_USER,
       password: process.env.MYSQL_PASSWORD,
+    },
+    seeds: {
+      directory: './seeds/development'
     }
   },
 
@@ -28,6 +34,9 @@ module.exports = {
       database: process.env.MYSQL_DATABASE,
       user: process.env.MYSQL_USER,
       password: process.env.MYSQL_PASSWORD,
+    },
+    seeds: {
+      directory: './seeds/production'
     }
   },
 };
